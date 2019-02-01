@@ -13,7 +13,7 @@ def initialize(n,board):
 
 
 def printboard(board):
-	l=[[" " for i in range(7)] for j in range(7)]
+	l=[[" " for i in range(len(board['queen'].keys()))] for j in range(len(board['queen'].keys()))]
 	for row in sorted(board['queen'].keys()):
 		#print((row,board['queen'][row]))
 		l[row][board['queen'][row]] = 'Q'
